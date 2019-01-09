@@ -280,7 +280,7 @@ fi
 #{{{ 配置 sudo 环境
 grep devel /etc/group>/dev/null 2>&1
 if [[ $? -gt 0 ]]; then 
-    addgroup devel
+    group devel
     echo 'Defaults secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/hp/bin:/hp/sbin" ' >> /etc/sudoers
     echo "%devel ALL=(ALL) ALL " >> /etc/sudoers.d/sih
 fi
