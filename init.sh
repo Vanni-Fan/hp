@@ -260,7 +260,6 @@ OK_OEF
 
 #{{{ 创建软连接
 [[ -L /etc/ld.so.conf.d/hp.ld.so.conf ]] || ln -s /hp/etc/hp.ld.so.conf /etc/ld.so.conf.d/hp.ld.so.conf
-[[ -L /etc/ld.so.conf.d/hp ]] || ln -s /hp/etc/ld.so.conf.d /etc/ld.so.conf.d/hp
 [[ -L /usr/include/hp ]] || ln -s /hp/include /usr/include/hp
 #}}}
 
