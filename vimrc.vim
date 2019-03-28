@@ -56,8 +56,15 @@ set ruler
 "窗口右下角显示未完成的命令
 set showcmd
 
+" NERDTree的配置
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '~'
+map <F10> :NERDTreeToggle<CR>
+
 "设置tags的路径
-set tags=./tags,tags,../tags,../../tags,../../../tags,../../../../tags
+let Tlist_Use_Right_Window = 1
+set tags+=./tags,./../tags,./../../tags,./../../../tags,./../../../../tags,./../../../../../tags,./../../../../../../tags,./../../../../../../../tags,./../../../../../../../../tags
+map <F12> :Tlist<CR>
 
 " 设置中文在线帮助
 set helplang=cn
