@@ -391,7 +391,10 @@ set completeopt=menu
 set foldenable
 set foldmethod=marker
 set foldlevel=0
-set path+=/hp/opt/php/lib/php
+set nobackup
+set noswapfile
+set noundofile
+"set path+=/hp/opt/php/lib/php
 "}}}
 
 "------------------------< Plug.vim : Plugin Manguager >------------"{{{
@@ -410,5 +413,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'davidhalter/jedi'
 Plug 'davidhalter/jedi-vim'
 Plug 'Valloric/YouCompleteMe'
+Plug 'Chiel92/vim-autoformat'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'lambdalisue/vim-fullscreen'
 call plug#end()
 "}}}
