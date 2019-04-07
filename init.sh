@@ -2,7 +2,7 @@
 
 #{{{ 创建目录
 mkdir -p /hp/man/{man1,man2,man3,man4,man5,man6,man7,man8,man9}
-mkdir -p /hp/{etc/ld.so.conf.d,data,log,bin,sbin,projects,opt,include}
+mkdir -p /hp/{etc/ld.so.conf.d,data,log,bin,sbin,projects,opt,include,src}
 #}}}
 
 #{{{ 生成 /hp/etc/hp.profile 文件
